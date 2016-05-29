@@ -1,0 +1,13 @@
+#baymax_bhai_ssh
+echo "Server Status:"
+echo
+while read hostname
+do
+ping -c 7 $hostname &> /dev/null
+if [ $? -eq 0 ]
+then
+printf "%-17s %b %2s\n" "$hostname" "\e[1;32m[ONLINE]\e[0m"
+else
+printf "%-17s %b %2s\n" "$hostname" "[\e[7;49;31mDOWN!!\e[0m]"
+fi
+done < /home/host.txt
