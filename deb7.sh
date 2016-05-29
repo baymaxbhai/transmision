@@ -2,7 +2,7 @@
 apt-get -y update
 apt-get -y install transmission-daemon
 wget -O /etc/transmission-daemon/settings.json "https://raw.githubusercontent.com/metaland/Transmission/master/settings.json"
-service transmission-daemon reload
+/etc/init.d/transmission-daemon reload
 
 #Apache2
 apt-get -y install apache2
