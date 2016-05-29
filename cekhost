@@ -1,13 +1,19 @@
-#baymax_bhai_ssh
-echo "Server Status:"
-echo
-while read hostname
-do
-ping -c 7 $hostname &> /dev/null
-if [ $? -eq 0 ]
-then
-printf "%-17s %b %2s\n" "$hostname" "\e[1;32m[ONLINE]\e[0m"
-else
-printf "%-17s %b %2s\n" "$hostname" "[\e[7;49;31mDOWN!!\e[0m]"
-fi
-done < /home/host.txt
+                                                                 
+#baymax_bhai_ssh                                                 
+echo                                                             
+echo -e "\e[1;33;48m-----------------------SERVER STATUS--------$
+echo                                                             
+while read hostname                                              
+do                                                               
+ping -c 7 $hostname &> /dev/null                                 
+if [ $? -eq 0 ]                                                  
+then                                                             
+printf "%-17s %b %2s\n" "$hostname" "\e[1;33;44m[ONLINE]\e[0m"   
+else                                                             
+printf "%-17s %b %2s\n" "$hostname" "[\e[7;49;31mDOWN!!\e[0m]"   
+fi                                                               
+#done < /home/host.txt    
+echo                                                             
+echo -e "\e[1;33;41m-------------------BAYMAX_BHAI_SSH----------$
+echo                                                             
+#please place credit y BAYMAX_BHAI_SSH
