@@ -1,11 +1,14 @@
 #baymax_bhai
 
-mkdir -p /home/cekhost.txt
+mkdir -p /home/host.txt
+
 cd /usr/bin
 
 wget https://raw.githubusercontent.com/baymaxbhai/transmision/master/cekhost
 
 chmod +x cekhost
+
+cd
 
 echo "==============================================================" | tee -a log-install.txt
 echo "create by baymax_bhai_ssh | tee log-install.txt
