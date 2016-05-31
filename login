@@ -1,5 +1,6 @@
+echo
 echo -e "\e[1;33;48m----------------------OPEN_SSH_LOGIN---------------------\e[0m"                                                      
-echo "---";                                                                               
+echo                                                                             
 for PID in "${data[@]}"                                                                   
 do                                                                                        
         #echo "check $PID";                                                               
